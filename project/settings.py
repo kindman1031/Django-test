@@ -14,7 +14,7 @@ STATICFILES_FINDERS = [
 
 # ---- deployment-specific settings ---- #
 DEBUG = True
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 ADMINS = [('dung', 'dung@hope.com'), ]
 MANAGERS = []
@@ -112,6 +112,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 10,
 }
 

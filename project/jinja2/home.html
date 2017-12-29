@@ -1,12 +1,20 @@
 <html>
-    <head>
-        <title>Pets app</title>
-    </head>
-    <body>
-    <div style="text-align: center; padding-top: 100px;">
-        <a href="{{ url('owners_admin:index') }}">Login for pet owners</a>
-        |
-        <a href="{{ url('admin:index') }}">Login for admins</a>
+
+<head>
+    <title>Dogs and Cats</title>
+</head>
+
+<body>
+    <div style="text-align: center; padding-top: 100px; font-size: 50px">
+
+        <div style="margin-bottom: 100px">
+            <a href="{{ url('owners_admin:index') }}" style="color: green;">Owner</a>
+        </div>
+
+        <div>
+            <a href="{{ url('admin:index') }}" style="color: blue">Admin</a>
+        </div>
     </div>
-    </body>
+</body>
+
 </html>
